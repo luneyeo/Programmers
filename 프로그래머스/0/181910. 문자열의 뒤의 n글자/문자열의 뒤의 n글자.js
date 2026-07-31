@@ -1,3 +1,3 @@
 const solution = (my_string, n) => {
-    return my_string.slice(my_string.length - n)
+    return my_string.substring(my_string.length - n)
 }
