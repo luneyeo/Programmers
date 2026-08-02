@@ -1,9 +1,3 @@
 const solution = (rsp) => {
-    return rsp
-        .split("")
-        .map((el) => {
-             if(el == 2) return 0
-            else if(el == 0) return 5
-            else return 2
-        }).join("")
+    return [...rsp].map((el) => el == 2 ? 0 : el == 0 ? 5 : 2).join("")
 }
