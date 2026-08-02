@@ -1,6 +1,3 @@
 const solution = (my_string, alp) => {
-  return my_string
-    .split('')
-    .map((char) => (char === alp ? char.toUpperCase() : char))
-    .join('');
+  return my_string.replaceAll(alp, alp.toUpperCase());
 };
